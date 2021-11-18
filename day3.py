@@ -40,7 +40,7 @@
 #     winner = arr[0]
 #     runnerUp = -101
 #     for i in range(1,n):
-#         #print(wineer,runnerup)
+#         #print(winner,runnerup)
 #         if arr[i] > winner:
 #             runnerUp = winner
 #             winner = arr[i]
