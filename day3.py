@@ -64,9 +64,10 @@
 #         marks.add(score)
 # second_lowest_marks = sorted(marks)[1]
 
-# # print(marks) # {41.0, 37.2, 37.21, 39.0}
-# # print(second_lowest_marks)  # 37.21
-# # print(marks_list)  #[['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41.0], ['Harsh', 39.0]]
+# print(marks) # {41.0, 37.2, 37.21, 39.0}
+# print(sorted(marks))
+# print(second_lowest_marks)  # 37.21
+# print(marks_list)  #[['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41.0], ['Harsh', 39.0]]
 
 # for name, score in marks_list:
 #     if score == second_lowest_marks:
@@ -77,31 +78,31 @@
 #--------------------------------------------------------------      
 # better approach
 
-# import sys
-# if __name__ == '__main__':
-#     nested = []
-#     lowest = sys.maxsize
-#     lowset2 = sys.maxsize
+import sys
+if __name__ == '__main__':
+    nested = []
+    lowest = sys.maxsize
+    lowest2 = sys.maxsize
 
-#     for _ in range(int(input())):
-#          name = input()
-#          score = float(input())
-#          newList = [name,score]
-#          nested.append(newList)
+    for _ in range(int(input())):
+         name = input()
+         score = float(input())
+         newList = [name,score]
+         nested.append(newList)
 
-#          if score < lowest:
-#              lowest2 = lowest
-#              lowest = score
+         if score < lowest:
+             lowest2 = lowest
+             lowest = score
 
-#          elif score < lowest2 and score != lowest:
-#              lowest2 = score  
-#     nameList = []
-#     for l in nested:
-#         if l[1] == lowest2:
-#             nameList.append(l[0])
-#     nameList.sort()
-#     for naam in nameList:
-#         print(naam)                     
+         elif score < lowest2 and score != lowest:
+             lowest2 = score  
+    nameList = []
+    for l in nested:
+        if l[1] == lowest2:
+            nameList.append(l[0])
+    nameList.sort()
+    for naam in nameList:
+        print(naam)                     
 ##############################################################################################
 
 # doormat
