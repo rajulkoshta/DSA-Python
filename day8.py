@@ -130,22 +130,85 @@
 
 #     https://leetcode.com/problems/valid-anagram/
 
+#     def isAnagram(s, t):
+# ------------------------------------------------------------------
 
+# char method        
+#         if len(s) != len(t):
+#             return False
+#         for char in set(s):
+#             if s.count(char)!= t.count(char):
+#                 return False
+#         return True
 
+# ------------------------------------------------------------------
 
-
-
+# sorting (nlogn)
+            # return sorted(s) == sorted(t)
+# ------------------------------------------------------------------
+    
+# hashmap (n)    
+#             map_s = {}
+#             map_t = {}
+#             for i in s:
+#                 map_s[i] = map_s.get(i,0) + 1
+            
+#             for i in t:
+#                 map_t[i] = map_t.get(i,0) + 1
+#             return map_s == map_t    
 
 # *******************************************************************************
 
 #     https://leetcode.com/problems/next-permutation/
 
+# class Solution:
+#     def nextPermutation(self, nums: List[int]) -> None:
+#         """
+#         Do not return anything, modify nums in-place instead.
+#         """
 
-
-
-
-
-
+# first method buggy code - need to work on it
+#         i=len(nums)-1
+        
+# find first decresing element
+          
+#         while i>0:
+#             if nums[i]>nums[i-1]:
+#                 break
+#             i-=1    
+            
+#         i-=1  
+#         if i==-1:
+#             nums[:] = sorted(nums)
+#             return
+#         else:
+# closest next greater element towards right 
+#             j = len(nums)-1
+#             while j>0 and nums[j] < nums[i]:
+#                 j-=1
+#             # swap
+#             nums[i] , nums[j] = nums[j] ,nums[i]
+        
+# reverse the rest element
+#             # nums[i+1:] = nums[i+1:][::-1]
+#             nums[i+1:] = sorted(nums[i+1:])
+#             return
+            
+# ------------------------------------------------------------------
+        # resolved code
+            
+        # i=len(nums)-2
+        # while i>-1:
+        #     if nums[i]<nums[i+1]:
+        #         j=len(nums)-1
+        #         while j>i:
+        #             if nums[j] > nums[i]:
+        #                 break
+        #             j-=1
+        #         nums[i],nums[j] = nums[j],nums[i]
+        #         break
+        #     i-=1
+        # nums[i+1:] = reversed(nums[i+1:])
 
 # *******************************************************************************
 
