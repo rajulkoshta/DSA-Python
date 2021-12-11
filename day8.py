@@ -166,33 +166,24 @@
 #         """
 #         Do not return anything, modify nums in-place instead.
 #         """
+        # length = len(nums)
+        # if length<=2:
+        #     return nums.reverse()
 
-# first method buggy code - need to work on it
-#         i=len(nums)-1
+        # pointer = length - 2
         
-# find first decresing element
-          
-#         while i>0:
-#             if nums[i]>nums[i-1]:
-#                 break
-#             i-=1    
+        # while pointer >=0 and nums[pointer] >= nums[pointer+1]:
+        #     pointer-=1
             
-#         i-=1  
-#         if i==-1:
-#             nums[:] = sorted(nums)
-#             return
-#         else:
-# closest next greater element towards right 
-#             j = len(nums)-1
-#             while j>0 and nums[j] < nums[i]:
-#                 j-=1
-#             # swap
-#             nums[i] , nums[j] = nums[j] ,nums[i]
-        
-# reverse the rest element
-#             # nums[i+1:] = nums[i+1:][::-1]
-#             nums[i+1:] = sorted(nums[i+1:])
-#             return
+        # if pointer == -1:
+        #     return nums.reverse()
+
+        # for x in range(length-1 , pointer , -1):
+        #     if nums[pointer] < nums[x]:
+        #         nums[pointer],nums[x] = nums[x],nums[pointer]
+        #         break
+                
+        # nums[pointer +1 :] = reversed(nums[pointer + 1:])    
             
 # ------------------------------------------------------------------
         # resolved code
