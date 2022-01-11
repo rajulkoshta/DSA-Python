@@ -139,27 +139,27 @@
 
 
 #-------------------------pop(n) push(1) ----------------------------
-    def __init__(self):
-        self.q1=deque()  
-        self.q2=deque()  
+    # def __init__(self):
+    #     self.q1=deque()  
+    #     self.q2=deque()  
 
-    def push(self, x: int) -> None:
-        self.q1.append(x)        
+    # def push(self, x: int) -> None:
+    #     self.q1.append(x)        
 
-    def pop(self) -> int:          
-        while len(self.q1) > 1:
-            self.q2.append(self.q1.popleft())
-        res=self.q1.popleft()
-        self.q1 , self.q2 = self.q2 , self.q1
-        return res
+    # def pop(self) -> int:          
+    #     while len(self.q1) > 1:
+    #         self.q2.append(self.q1.popleft())
+    #     res=self.q1.popleft()
+    #     self.q1 , self.q2 = self.q2 , self.q1
+    #     return res
     
-    def top(self) -> int:       
-        return self.q1[len(self.q1)-1]
+    # def top(self) -> int:       
+    #     return self.q1[len(self.q1)-1]
         
-    def empty(self) -> bool:
-        if len(self.q1):
-            return False
-        return True
+    # def empty(self) -> bool:
+    #     if len(self.q1):
+    #         return False
+    #     return True
 
 
 
@@ -177,57 +177,25 @@
 # https://leetcode.com/problems/single-element-in-a-sorted-array/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# class Solution:
+#     def singleNonDuplicate(self, nums: List[int]) -> int:
+#         l=0
+#         h=len(nums)-1
+#         if h==0:
+#             return nums[0]
+#         elif nums[0] != nums[1]:
+#             return nums[0]
+#         elif nums[h] != nums[h-1]:
+#             return nums[h]
+#         while l<=h:
+#             m=(l+h)//2
+#             if nums[m] != nums[m+1] and nums[m] != nums[m-1]:
+#                 return nums[m]
+#             if (m % 2 ==0 and nums[m] == nums[m+1]) or (m % 2 !=0 and nums[m] == nums[m-1]):
+#                 l = m+1
+#             else:
+#                 h=m-1
+#         return -1  
 
 
 #============================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

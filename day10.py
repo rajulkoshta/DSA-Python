@@ -98,7 +98,7 @@
 
 #     https://leetcode.com/problems/merge-intervals/
 
-
+0
 # def merge(intervals):
 #         intervals = sorted(intervals,key= lambda x : x[0])
 #         res=[]
