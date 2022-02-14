@@ -9,12 +9,14 @@ https://leetcode.com/rajulkoshta10/
 AdnanSami —
 https://www.hackerrank.com/adnansami_techie 
 
-
+https://leetcode.com/adnansami_techie/
 
 ******************************************************************************
 
 manan
 https://www.hackerrank.com/manandeep123
+
+https://leetcode.com/mandeep01/
 
 
 ******************************************************************************
@@ -28,6 +30,8 @@ https://www.hackerrank.com/sabharwalabhina1
 Adii
 https://www.hackerrank.com/aditi_9
 
+https://leetcode.com/agarwaladiti009/
+
 ******************************************************************************
 
 sidhant
@@ -40,10 +44,14 @@ https://leetcode.com/codetalker7/
 chandan_devs
 https://www.hackerrank.com/chandan_devs
 
+https://leetcode.com/chandan_devs/
+
 ******************************************************************************
 
 adithaya
 https://www.hackerrank.com/adikshan11
+
+https://leetcode.com/adikshan11/
 
 ******************************************************************************
 
@@ -52,3 +60,7 @@ https://www.hackerrank.com/vitekarvikas55
 https://leetcode.com/VikasVitekari/
 
 ******************************************************************************
+anuj
+
+https://leetcode.com/anuj_barochia/
+
