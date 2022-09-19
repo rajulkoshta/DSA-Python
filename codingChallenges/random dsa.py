@@ -45,4 +45,13 @@
 # print(fsort([4,3,5,2,9,7,8]))    
 # 
 
-   
+
+def show_excitement():
+    string = "I am super excited for this course!"
+    i=1
+    while(i<5):
+        string = string + i + " "
+        i+=1
+    return string
+    
+print(show_excitement())

@@ -338,7 +338,7 @@
 # i=0
 # j=1
 # for j in range(n):
-#     if arr[j] != arr[i]:
+#     if arr[j] != arr[i]:   
 #         i+=1
 #         arr[i] = arr[j]
 
